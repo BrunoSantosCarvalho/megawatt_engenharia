@@ -7,7 +7,7 @@
 
 body {
   line-height: 1.6;
-  background-color: #F0F8FF;
+  background-color: #f0f8ff;
 }
 
 .container {
@@ -17,7 +17,7 @@ body {
 }
 
 header {
-  background-color: #F0F8FF;
+  background-color: #f0f8ff;
   color: white;
   padding: 1rem 0;
 }
@@ -36,7 +36,6 @@ header {
 .logo-img {
   width: 100px;
   margin-right: 10px;
-
 }
 
 .logo-text {
@@ -46,7 +45,6 @@ header {
   align-items: center;
   color: #084d6e;
 }
-
 
 nav ul {
   list-style: none;
@@ -59,7 +57,6 @@ nav ul li a {
   text-decoration: none;
   font-size: 1.2rem;
 }
-
 
 .logo {
   font-size: 2.5rem;
@@ -83,9 +80,8 @@ nav ul li a {
   font-size: 1.2rem;
 }
 
-
 .hero {
-  background: url('solar.jpg') no-repeat center center/cover;
+  background: url("solar.jpg") no-repeat center center/cover;
   color: white;
   text-align: center;
   padding: 100px 0;
@@ -93,7 +89,7 @@ nav ul li a {
 }
 
 .hero::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -108,9 +104,7 @@ nav ul li a {
 .cta {
   position: relative;
   z-index: 2;
-
 }
-
 
 @keyframes slide-in-up {
   0% {
@@ -124,16 +118,12 @@ nav ul li a {
   }
 }
 
-
 .hero h2 {
   font-size: 2.5rem;
   color: white;
   margin-bottom: 20px;
   animation: slide-in-up 2s ease-out;
 }
-
-
-
 
 .cta {
   background-color: #ff8c00;
@@ -149,18 +139,15 @@ nav ul li a {
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
 }
 
-
 .cta:hover {
   background-color: #084d6e;
   box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
   color: #ff8c00;
   transform: translateY(-3px);
-
 }
 
-
 .cta::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -174,7 +161,6 @@ nav ul li a {
 .cta:hover::before {
   height: 100%;
 }
-
 
 .cta span {
   position: relative;
@@ -200,7 +186,7 @@ nav ul li a {
   padding: 20px;
   background-color: #f4f4f4;
   border-radius: 5px;
-  box-shadow: 10px 5px 5px #ff8c00
+  box-shadow: 10px 5px 5px #ff8c00;
 }
 
 .service-item h3 {
@@ -244,16 +230,13 @@ nav ul li a {
 
 .servicos {
   padding-bottom: 60px;
-
 }
-
 
 .servicos-realizados {
   padding: 80px 0;
   text-align: center;
-  background-color: #F0F8FF;
+  background-color: #f0f8ff;
   margin-top: 40px;
-
 }
 
 .servicos-realizados h2 {
@@ -262,12 +245,10 @@ nav ul li a {
   margin-bottom: 40px;
 }
 
-
 .galeria {
   display: flex;
   gap: 30px;
   margin-top: 40px;
-
 }
 
 .galeria-item {
@@ -283,7 +264,6 @@ nav ul li a {
   display: block;
   transition: transform 0.3s ease;
 }
-
 
 .galeria-item:hover img {
   transform: scale(1.1);
@@ -305,7 +285,67 @@ html {
   scroll-behavior: smooth;
 }
 
-
 footer p {
   font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column; /* Menu e logo em coluna */
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hero {
+    padding: 50px 0;
+  }
+
+  .service-grid {
+    flex-direction: column; /* Serviços empilhados em telas pequenas */
+  }
+
+  .service-item {
+    margin-bottom: 20px;
+  }
+
+  .logo-text {
+    font-size: 1.5rem; /* Reduzir tamanho da logo */
+  }
+
+  .cta {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+  }
+}
+
+/* Para telas menores que 480px (celulares pequenos) */
+@media (max-width: 480px) {
+  .header-container {
+    padding: 0.5rem;
+  }
+
+  .logo-img {
+    width: 80px; /* Reduzir tamanho do logo */
+  }
+
+  .service-item {
+    min-width: 100%; /* Garantir que ocupe 100% da largura */
+  }
+
+  .cta {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .btn {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+  }
+
+  footer p {
+    font-size: 0.9rem;
+  }
 }

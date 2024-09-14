@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Megawatt Engenharia</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="container header-container">
+        <div class="logo-container">
+          <img
+            src="LOGO FINAL copiar.png"
+            alt="Logo da Megawatt Engenharia"
+            class="logo-img"
+          />
+          <h1 class="logo-text">Megawatt Engenharia</h1>
+        </div>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="#sobre">Sobre Nós</a></li>
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section class="hero">
+      <div class="container">
+        <h2>Energia Solar e Soluções Elétricas Inteligentes</h2>
+        <p>Projetos sustentáveis e eficientes para residências e indústrias.</p>
+        <button
+          class="cta"
+          onclick="document.getElementById('contato').scrollIntoView({behavior: 'smooth'})"
+        >
+          <span>Peça seu orçamento</span>
+        </button>
+      </div>
+    </section>
+
+    <section id="sobre" class="about">
+      <div class="container">
+        <h2>Quem Somos</h2>
+        <br /><br />
+        <p>
+          A Megawatt Engenharia é especializada em soluções de energia solar,
+          serviços elétricos residenciais e industriais, e climatização. Com
+          foco em eficiência e sustentabilidade, nossos projetos geram valor
+          para o meio ambiente e para os nossos clientes.
+        </p>
+      </div>
+    </section>
+
+    <section id="servicos" class="services">
+      <div class="container">
+        <h2>Nossos Serviços</h2>
+        <div class="service-grid">
+          <div class="service-item">
+            <h3>Energia Solar</h3>
+            <p>
+              Projeto e instalação de sistemas de energia solar fotovoltaica
+              para residências e indústrias.
+            </p>
+            <br />
+          </div>
+          <div class="service-item">
+            <h3>Serviços Elétricos</h3>
+            <p>
+              Instalação, montagem de painéis elétricos, comissionamento e
+              manutenção industrial.
+            </p>
+          </div>
+          <div class="service-item">
+            <h3>Climatização</h3>
+            <p>
+              Instalação e manutenção de sistemas de ar-condicionado para
+              ambientes residenciais e industriais.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="servicos-realizados">
+      <div class="container">
+        <h2>Serviços Realizados</h2>
+        <div class="galeria">
+          <div class="galeria-item">
+            <img src="servico1.jpg" alt="Serviço 1" />
+          </div>
+          <div class="galeria-item">
+            <img src="servico2.jpg" alt="Serviço 2" />
+          </div>
+          <div class="galeria-item">
+            <img src="servico3.jpg" alt="Serviço 3" />
+          </div>
+          <div class="galeria-item">
+            <img src="servico4.jpg" alt="Serviço 4" />
+          </div>
+          <div class="galeria-item">
+            <img src="servico5.jpg" alt="Serviço 5" />
+          </div>
+          <div class="galeria-item">
+            <img src="servico6.jpg" alt="Serviço 6" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" class="contact">
+      <div class="container">
+        <h2>Fale Conosco</h2>
+        <form
+          action="https://formsubmit.co/51a4e863496742ca536216936505cc64"
+          method="POST"
+        >
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" name="nome" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="mensagem">Mensagem:</label>
+          <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+          <input
+            type="hidden"
+            name="_next"
+            value="https://127.0.0.1:5500/obrigado.html"
+          />
+
+          <button type="submit" class="btn">Enviar</button>
+        </form>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <p>&copy; 2024 Megawatt Engenharia. Todos os direitos reservados.</p>
+        <br />
+        <p>Desenvolvido por Bruno Carvalho</p>
+      </div>
+    </footer>
+  </body>
+</html>
